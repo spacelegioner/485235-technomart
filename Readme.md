@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Даниил Маслов](https://up.htmlacademy.ru/htmlcss/20/user/485235).
-* Наставник: [Александр Сушко](https://htmlacademy.ru/profile/sashasushko).
+* Наставник: `Неизвестно`.
 
 ---
 
