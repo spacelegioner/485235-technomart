@@ -11,7 +11,13 @@
   <header class="main-header">
     <section class="header-top">
       <div><a>Техномарт</a></div>
-      <span>Поиск</span>
+      <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label for="header-search">Поиск:</label>
+          <input type="text" id="header-search">
+          <button type="submit">Найти</button>
+        </p>
+      </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 0</a>
       <a href="#">Оформить заказ</a>
@@ -22,10 +28,10 @@
         <a href="#">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <div>
-        <a href="#">Войти</a>
-        <a href="#">Регистрация</a>
-      </div>
+      <ul>
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Регистрация</a></li>
+      </ul>
     </section>
     <nav class="main-navigation">
       <ul>
@@ -188,7 +194,7 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами,
         <br> заехав в наш офис:</p>
-      <img src="img/contact-map.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная, дом 19" width="300" height="159">
+      <img src="img/contact-map.jpg" alt="Магазин по адресу: ул. Большая Конюшенная, дом 19, Санкт-Петербург" width="300" height="159">
       <a href="#">Заблудились? Напишите нам!</a>
     </section>
   </main>
@@ -223,25 +229,31 @@
       </ul>
       <p>Обратная связь:
         <br>
-        <a href="#">mail@htmlacademy.ru</a></p>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
       <p>Разработано —
         <br>
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </section>
   </footer>
   <section class="modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <span>X</span>
-    <!-- <label for="#">Ваше имя:</label>
-    <input type="text">
-    <label for="#">Ваш e-mail:</label>
-    <input type="email">
-    <label for="#">Текст письма:</label>
-    <input type="textarea">
-    <button type="submit">Отправить</button> -->
+    <h3 class="visually-hidden">Напишите нам</h3>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="post">
+      <p>
+        <label for="write-us-form-name">Ваше имя:</label>
+        <input type="text" id="write-us-form-name" placeholder="Представьтесь, пожалуйста">
+        <label for="write-us-form-email">Ваш e-mail:</label>
+        <input type="email" id="write-us-form-email" placeholder="Для отправки ответа">
+        <label for="write-us-form-text">Текст письма:</label>
+        <input type="textarea" id="write-us-form-text" placeholder="В свободной форме">
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
   </section>
   <section class="modal modal-map">
-    <!-- Здесь будет интерактивная карта -->
+    <h3 class="visually-hidden">Схема проезда</h3>
+    <img src="img/contact-map-big.jpg" alt="Магазин по адресу: ул. Большая Конюшенная, дом 19, Санкт-Петербург" width="940" height="446">
+    <button type="button">Закрыть</button>
   </section>
 </body>
 
