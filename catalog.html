@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт - Перфораторы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,15 +26,19 @@
     </section>
     <section class="header-about">
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <div>
-        <a href="#">+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <div class="header-location">
+        <p>
+          <a class="header-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
+        <p class="header-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div>
-        <div>
+        <p>
           <a href="#">Равшан Джамшутович</a>
+        </p>
+        <p>
           <a href="#">Выйти</a>
-        </div>
+        </p>
         <ul>
           <li><a href="#">Мои заказы</a></li>
           <li><a href="#">Личный кабинет</a></li>
@@ -59,8 +65,8 @@
       <li>Перфораторы</li>
     </ul>
     <h1>Перфораторы</h1>
-    <b>Фильтр:</b>
     <form action="https://echo.htmlacademy.ru/" method="post">
+      <b>Фильтр:</b>
       <fieldset>
         <legend>Цена:</legend>
         <div class="filter-range">
@@ -78,31 +84,31 @@
         <legend>Производители:</legend>
         <ul>
           <li>
-            <input type="checkbox" name="bosch" id="filter-bosch" checked>
+            <input type="checkbox" name="producer[]" value="bosch" id="filter-bosch" checked>
             <label for="filter-bosch">
               Bosch
             </label>
           </li>
           <li>
-            <input type="checkbox" name="interscol" id="filter-interscol">
+            <input type="checkbox" name="producer[]" value="interscol" id="filter-interscol">
             <label for="filter-interscol">
               Интерскол
             </label>
           </li>
           <li>
-            <input type="checkbox" name="makita" id="filter-makita" checked>
+            <input type="checkbox" name="producer[]" value="makita" id="filter-makita" checked>
             <label for="filter-makita">
               Makita
             </label>
           </li>
           <li>
-            <input type="checkbox" name="dewalt" id="filter-dewalt">
+            <input type="checkbox" name="producer[]" value="dewalt" id="filter-dewalt">
             <label for="filter-dewalt">
               Dewalt
             </label>
           </li>
           <li>
-            <input type="checkbox" name="hitachi" id="filter-hitachi">
+            <input type="checkbox" name="producer[]" value="hitachi" id="filter-hitachi">
             <label for="filter-hitachi">
               Hitachi
             </label>
@@ -128,8 +134,8 @@
       <li><a href="#">По цене</a></li>
       <li><a href="#">По типу</a></li>
       <li><a href="#">По функционалу</a></li>
-      <li><span><a href="#">По возрастанию</a></span></li>
-      <li><span><a href="#">По убыванию</a></span></li>
+      <li><a href="#">По возрастанию</a></li>
+      <li><a href="#">По убыванию</a></li>
     </ul>
     <section class="catalog-items-list">
       <ul>
@@ -250,7 +256,8 @@
       <b>Пара слов о перфораторах</b>
       <p>
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-        <br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        <br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
+        молоток и ударная дрель.
       </p>
     </section>
   </main>
@@ -279,7 +286,9 @@
     </section>
     <section class="footer-about-us">
       <p>© 2010–2017 Компания «Техномарт»
-        <br> Все права защищены</p>
+        <br>
+        Все права защищены
+      </p>
       <ul>
         <li><a class="social social-vk" href="#">Вконтакте</a></li>
         <li><a class="social social-fb" href="#">Фейсбук</a></li>
@@ -287,10 +296,12 @@
       </ul>
       <p>Обратная связь:
         <br>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
       <p>Разработано —
         <br>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </p>
     </section>
   </footer>
   <section class="modal modal-cart">
