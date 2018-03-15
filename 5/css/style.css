@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-service {
+  background-color: #293449;
+
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.header-service a:hover,
+.header-service a:focus {
+  background-color: #212a3a;
+}
+
+.header-service a:active {
+  background-color: #161d29;
+}
+
+.header-logo a {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ee3643;
+
+  padding: 13px 55px;
+}
+
+.header-logo a:hover,
+.header-logo a:focus {
+  background-color: #ca2c37;
+}
+
+.header-logo a:active {
+  background-color: #ba2732;
+}
+
+.search label {
+  color: #ffffff;
+
+  padding: 14px 28px;
+}
+
+.header-bookmarks {
+  padding: 14px 26px;
+}
+
+.header-cart {
+  padding: 14px 32px;
+}
+
+.header-order a {
+  text-align: center;
+
+  background-color: #63a63e;
+
+  padding: 14px 20px;
+}
+
+.header-order a:hover,
+.header-order a:focus {
+  background-color: #5fbb2d;
+}
+
+.header-order a:active {
+  background-color: #518534;
+}
+
+.header-about-title {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+}
+
+.header-location {
+  font-size: 14px;
+  line-height:24px;
+  color: #32425c;
+}
+
+.header-user-login a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.header-user-login a:hover,
+.header-user-login a:focus {
+  color: #ee3643;
+}
+
+.header-user-login a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-navigation {
+  font-size: 17px;
+  line-height: 17px;
+
+  background-color: #32425c;
+}
+
+.header-navigation a {
+  color: #ffffff;
+}
+
+.header-navigation a:hover,
+.header-navigation a:focus {
+  background-color: #293449;
+}
+
+.header-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
+}
+
+.features-shop {
+  background-color: #f4f8fa;
+}
+
+.features-description a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.features-description b {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.features-slider b {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
