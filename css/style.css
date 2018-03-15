@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -29,6 +28,15 @@ a {
   overflow: hidden;
 }
 
+.button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
 .header-service {
   background-color: #293449;
 
@@ -45,7 +53,7 @@ a {
   background-color: #161d29;
 }
 
-.header-logo a {
+.header-logo {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -54,6 +62,11 @@ a {
   background-color: #ee3643;
 
   padding: 13px 55px;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  background-color: #ca2c37;
 }
 
 .header-logo a:hover,
@@ -65,12 +78,6 @@ a {
   background-color: #ba2732;
 }
 
-.search label {
-  color: #ffffff;
-
-  padding: 14px 28px;
-}
-
 .header-bookmarks {
   padding: 14px 26px;
 }
@@ -79,7 +86,7 @@ a {
   padding: 14px 32px;
 }
 
-.header-order a {
+.header-order {
   text-align: center;
 
   background-color: #63a63e;
@@ -168,10 +175,221 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  color: #ffffff;
+}
+
+.features-slider {
+  color: #ffffff;
 }
 
 .features-slider b {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+}
+
+.catalog-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.popular-items-list h2,
+.popular-manufacturer-list h2,
+.services-shop h2,
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.catalog-last-price,
+.catalog-price {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-price {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.catalog-last-price {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.catalog-item-options {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+}
+
+.catalog-item-buy {
+  background-color: #63a63e;
+}
+
+.catalog-item-bookmark {
+  color: #32425c;
+}
+
+.services-shop h2 {
+  color: #000000;
+}
+
+.services-shop h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.services-shop p,
+.about-shop p,
+.contacts-shop p,
+.about-punchers p {
+  margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-shop h2,
+.contacts-shop h2,
+.about-punchers b {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-us-company {
+  line-height: 20px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ee3643;
+
+  padding: 13px 55px;
+}
+
+.footer-contacts {
+  background-color: #32425c;
+}
+
+.footer-contacts p {
+  margin: 0;
+
+  color: #ffffff;
+}
+
+.navigation-special a {
+  color: #ffd180;
+}
+
+.footer-about-us {
+  background-color: #293449;
+}
+
+.footer-about-us p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-about-us a {
+  color: #ffd180;
+}
+
+.write-us-form label {
+  line-height: 18px;
+}
+
+/* CATALOG */
+
+.header-user-menu a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-user-menu a:hover,
+.header-user-menu a:focus {
+  color: #ee3643;
+}
+
+.header-user-menu a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.header-user-controller p > a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.catalog-breadcrumbs a,
+.catalog-filter span,
+.catalog-sort {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.catalog-filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.catalog-filter-producer,
+.catalog-radio-type {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.catalog-sort a {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-sort-active {
+  color: #ee3643;
+}
+
+.catalog-pagination {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.catalog-pagination a {
+  color: #000000;
+}
+
+.catalog-pagination-active {
+  color: #ee3643;
 }
