@@ -37,7 +37,33 @@ a {
   background-color: #ee3643;
 }
 
+.main-header {
+  margin-bottom: 59px;
+  min-height: 320px;
+
+  background-color: #f4f7f9;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-service-wrapper {
+  width: 100%;
+  background-color: #293449;
+}
+
+.header-service-wrapper .container {
+  display: flex;
+}
+
 .header-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   background-color: #293449;
 
   font-size: 17px;
@@ -45,6 +71,12 @@ a {
 }
 
 .header-service a {
+  width: 150px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  text-align: center;
+  vertical-align: middle;
   color: #ffffff;
 }
 
@@ -71,49 +103,57 @@ a {
 }
 
 .header-logo a {
+  width: 220px;
+  padding-top: 13px;
+
+  box-shadow: 0 5px 0 0 #b52933;
+
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
   color: #ffffff;
 
   background-color: #ee3643;
 
 }
 
+.header-logo:hover,
+.header-logo:focus,
 .header-logo a:hover,
 .header-logo a:focus {
   background-color: #ca2c37;
 }
 
+.header-logo:active,
 .header-logo a:active {
   background-color: #ba2732;
 }
 
-.search input {
-  font: inherit;
-}
-
 .header-bookmarks {
+  padding-top: 13px;
+  padding-bottom: 12px;
 }
 
-.header-order {
-  text-align: center;
-
-  background-color: #63a63e;
+.search input {
+  width: 270px;
+  font: inherit;
+  color: #000000;
 }
 
-.header-order a:hover,
-.header-order a:focus {
-  background-color: #5fbb2d;
-}
-
-.header-order a:active {
-  background-color: #518534;
+.header-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 41px;
+  margin-bottom: 40px;
 }
 
 .header-about-title {
+  width: 320px;
   margin: 0;
+
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -127,9 +167,36 @@ a {
 }
 
 .header-location {
+  width: 338px;
+
   font-size: 14px;
   line-height:24px;
   color: #32425c;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-user-login {
+  width: 282px;
+  display: flex;
+}
+
+.header-user-come-in {
+  background-color: #ffffff;
+}
+
+.header-user-registration {
+  margin-left: auto;
+
+  background-color: #ffffff;
+}
+
+.header-user-login,
+.header-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .header-user-login a {
@@ -148,9 +215,16 @@ a {
 }
 
 .header-navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  margin-bottom: 59px;
+
   font-size: 17px;
   line-height: 17px;
 
+  box-shadow: 0 5px 0 0 #293449;
   background-color: #32425c;
 }
 
@@ -170,7 +244,22 @@ a {
 }
 
 .features-shop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 53px;
+
   background-color: #f4f8fa;
+}
+
+.features-description {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-description li {
+  width: 300px;
 }
 
 .features-description > li:first-child {
@@ -197,8 +286,8 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-
   text-transform: uppercase;
+
 }
 
 .features-description b {
@@ -209,6 +298,12 @@ a {
 }
 
 .features-slider {
+  margin: 0;
+  padding: 0;
+  width: 620px;
+
+  list-style: none;
+
   color: #ffffff;
 }
 
@@ -216,6 +311,23 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+}
+
+.catalog-items-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-titles {
+  background-color: #f9f5f0;
+}
+
+.catalog-items-list ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .catalog-item,
@@ -226,7 +338,12 @@ a {
   font-weight: 700;
 }
 
-.popular-items-list h2,
+.catalog-item {
+  width: 218px;
+  border: 1px solid #eaeaea;
+}
+
+.catalog-items-list h2,
 .popular-manufacturer-list h2,
 .services-shop h2,
 .catalog-title {
@@ -268,6 +385,15 @@ a {
 
 .catalog-item-bookmark {
   color: #32425c;
+}
+
+.popular-manufacturer-list ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .services-shop h2 {

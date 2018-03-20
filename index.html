@@ -12,32 +12,37 @@
 
 <body>
   <header class="main-header">
-    <section class="header-service">
-      <div class="header-logo">
-        <a>Техномарт</a>
+    <div class="header-service-wrapper">
+      <div class="container">
+        <section class="header-service">
+          <div class="header-logo">
+            <a>Техномарт</a>
+          </div>
+          <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="text" placeholder="Поиск:" id="header-search">
+          </form>
+          <a class="header-bookmarks" href="#">Закладки: 0</a>
+          <a class="header-cart" href="#">Корзина: 0</a>
+          <a class="header-order" href="#">Оформить заказ</a>
+        </section>
       </div>
-      <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="text" placeholder="Поиск:" id="header-search">
-      </form>
-      <a href="#">Закладки: 0</a>
-      <a href="#">Корзина: 0</a>
-      <a href="#">Оформить заказ</a>
-    </section>
-    <section class="header-about">
-      <p class="header-about-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <div class="header-location">
-        <p class="header-number">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </p>
-        <p class="header-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      </div>
-      <ul class="header-user-login">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Регистрация</a></li>
-      </ul>
-    </section>
-    <nav class="header-navigation">
-      <ul>
+    </div>
+    <div class="container">
+      <section class="header-about">
+        <p class="header-about-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="header-location">
+          <p class="header-number">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
+          <p class="header-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <ul class="header-user-login">
+          <li><a class="header-user-come-in" href="#">Войти</a></li>
+          <li><a class="header-user-registration" href="#">Регистрация</a></li>
+        </ul>
+      </section>
+    <nav>
+      <ul class="header-navigation">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -47,8 +52,9 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
+    </div>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">«Техномарт» — Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <section class="features-shop">
       <ul class="features-description">
@@ -88,9 +94,11 @@
         </li>
       </ul>
     </section>
-    <section class="popular-items-list">
-      <h2>Популярные товары:</h2>
-      <a class="button" href="#">Все популярные товары</a>
+    <section class="catalog-items-list">
+      <div class="main-titles">
+        <h2>Популярные товары:</h2>
+        <a class="button" href="#">Все популярные товары</a>
+      </div>
       <ul>
         <li>
           <article class="catalog-item">
@@ -142,8 +150,10 @@
       </ul>
     </section>
     <section class="popular-manufacturer-list">
-      <h2>Популярные производители:</h2>
-      <a class="button" href="#">Все производители</a>
+      <div class="main-titles">
+        <h2>Популярные производители:</h2>
+        <a class="button" href="#">Все производители</a>
+      </div>
       <ul>
         <li>
           <a href="#"><img src="img/gen-bosch.jpg" alt="Фирма-производитель Bosch" width="126" height="37"></a>
