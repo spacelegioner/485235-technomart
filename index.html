@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,21 +17,17 @@
         <a>Техномарт</a>
       </div>
       <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="header-search">Поиск:</label>
-        <input type="text" id="header-search">
-        <button type="submit">Найти</button>
+        <input type="text" placeholder="Поиск:" id="header-search">
       </form>
       <a href="#">Закладки: 0</a>
       <a href="#">Корзина: 0</a>
-      <div class="header-order">
-        <a href="#">Оформить заказ</a>
-      </div>
+      <a href="#">Оформить заказ</a>
     </section>
     <section class="header-about">
       <p class="header-about-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <div class="header-location">
-        <p>
-          <a class="header-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="header-number">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <p class="header-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
@@ -78,72 +78,72 @@
           <b>Дрели</b>
           <p>Соседям на радость!</p>
           <img src="img/slider-2.jpg" alt="Покупка дрелей в магазине Техномарт" width="620" height="266">
-          <a href="catalog.html">Открыть каталог</a>
+          <a class="button" href="catalog.html">Открыть каталог</a>
         </li>
         <li>
           <b>Перфораторы</b>
           <p>Настоящие мужские игрушки</p>
           <img src="img/slider-1.jpg" alt="Покупка перфораторов в магазине Техномарт" width="620" height="266">
-          <a href="catalog.html">Открыть каталог</a>
+          <a class="button" href="catalog.html">Открыть каталог</a>
         </li>
       </ul>
     </section>
-    <article class="popular-items-list">
+    <section class="popular-items-list">
       <h2>Популярные товары:</h2>
-      <a href="#">Все популярные товары</a>
+      <a class="button" href="#">Все популярные товары</a>
       <ul>
         <li>
-          <article class="popular-item">
+          <article class="catalog-item">
             <img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="150">
             <h3>Перфоратор BOSCH BFG 9000</h3>
-            <span>32500 Р.</span>
-            <span>25500 Р.</span>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
+            <span class="catalog-last-price">32500 Р.</span>
+            <span class="catalog-price">25500 Р.</span>
+            <di class="catalog-item-options">
+              <a class="catalog-item-buy" href="#">Купить</a>
+              <a class="catalog-item-bookmark" href="#">В закладки</a>
             </div>
           </article>
         </li>
         <li>
-          <article class="popular-item">
+          <article class="catalog-item">
             <img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="150">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-            <span>22500 Р.</span>
-            <span>15500 Р.</span>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
+            <span class="catalog-last-price">22500 Р.</span>
+            <span class="catalog-price">15500 Р.</span>
+            <div class="catalog-item-options">
+              <a class="catalog-item-buy" href="#">Купить</a>
+              <a class="catalog-item-bookmark" href="#">В закладки</a>
             </div>
           </article>
         </li>
         <li>
-          <article class="popular-item">
+          <article class="catalog-item">
             <img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="150">
             <h3>Перфоратор BOSCH BFG 6000</h3>
-            <span>30500 Р.</span>
-            <span>25500 Р.</span>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
+            <span class="catalog-last-price">30500 Р.</span>
+            <span class="catalog-price">25500 Р.</span>
+            <div class="catalog-item-options">
+              <a class="catalog-item-buy" href="#">Купить</a>
+              <a class="catalog-item-bookmark" href="#">В закладки</a>
             </div>
           </article>
         </li>
         <li>
-          <article class="popular-item">
+          <article class="catalog-item">
             <img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="150">
             <h3>Перфоратор BOSCH BFG 2000</h3>
-            <span>12500 Р.</span>
-            <div>
-              <a href="#">Купить</a>
-              <a href="#">В закладки</a>
+            <span class="catalog-price">12500 Р.</span>
+            <div class="catalog-item-options">
+              <a class="catalog-item-buy" href="#">Купить</a>
+              <a class="catalog-item-bookmark" href="#">В закладки</a>
             </div>
           </article>
         </li>
       </ul>
-    </article>
+    </section>
     <section class="popular-manufacturer-list">
       <h2>Популярные производители:</h2>
-      <a href="#">Все производители</a>
+      <a class="button" href="#">Все производители</a>
       <ul>
         <li>
           <a href="#"><img src="img/gen-bosch.jpg" alt="Фирма-производитель Bosch" width="126" height="37"></a>
@@ -193,7 +193,7 @@
       <section class="credit-service">
         <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        <a href="#">Отправить заявку</a>
+        <a class="button" href="#">Отправить заявку</a>
         <img src="img/service-credit.jpg" alt="" width="465" height="285">
       </section>
     </section>
@@ -209,7 +209,7 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#">Подробнее о компании</a>
+      <a class="button" href="#">Подробнее о компании</a>
     </section>
     <section class="contacts-shop">
       <h2>Контакты</h2>
@@ -218,7 +218,7 @@
         заехав в наш офис:
       </p>
       <img src="img/contact-map.jpg" alt="Магазин по адресу: ул. Большая Конюшенная, дом 19, Санкт-Петербург" width="300" height="159">
-      <a href="#">Заблудились? Напишите нам!</a>
+      <a class="button" href="#">Заблудились? Напишите нам!</a>
     </section>
   </main>
   <footer class="main-footer">
@@ -234,7 +234,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="navigation-special">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
@@ -277,7 +277,7 @@
         <label for="write-us-form-text">Текст письма:</label>
         <input type="textarea" id="write-us-form-text" placeholder="В свободной форме">
       </p>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
     </form>
     <button type="button">Закрыть</button>
   </section>
