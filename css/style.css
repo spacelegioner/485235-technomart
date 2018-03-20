@@ -59,6 +59,24 @@ a {
   display: flex;
 }
 
+.footer-contacts-wrapper {
+  width: 100%;
+  background-color: #32425c;
+}
+
+.footer-contacts-wrapper .container {
+  display: flex;
+}
+
+.footer-about-wrapper {
+  width: 100%;
+  background-color: #293449;
+}
+
+.footer-about-wrapper .container {
+  display: flex;
+}
+
 .header-service {
   display: flex;
   flex-direction: row;
@@ -313,6 +331,10 @@ a {
   line-height: 36px;
 }
 
+.catalog-items-list {
+  margin-bottom: 21px;
+}
+
 .catalog-items-list ul {
   display: flex;
   flex-direction: row;
@@ -320,6 +342,8 @@ a {
 }
 
 .main-titles {
+  margin-bottom: 20px;
+
   background-color: #f9f5f0;
 }
 
@@ -390,10 +414,22 @@ a {
 .popular-manufacturer-list ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.popular-manufacturer-list ul > li {
+  width: 218px;
+  border: 1px solid #eaeaea;
+
+}
+
+.services-shop {
+  background-color: #f4f8f9;
 }
 
 .services-shop h2 {
@@ -406,6 +442,19 @@ a {
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
+}
+
+.about-shop {
+  width: 640px;
+}
+
+.contacts-shop {
+  width: 300px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .services-shop p,
@@ -433,7 +482,9 @@ a {
   line-height: 20px;
 }
 
-.footer-logo a {
+.footer-logo {
+  width: 220px;
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -444,13 +495,28 @@ a {
 }
 
 .footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #32425c;
 }
 
 .footer-contacts p {
   margin: 0;
+  width: 325px;
+  order: 1;
 
   color: #ffffff;
+}
+
+.footer-navigation ul {
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
 }
 
 .footer-navigation a {
@@ -462,6 +528,11 @@ a {
 }
 
 .footer-about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 940px;
+
   background-color: #293449;
 }
 
@@ -473,8 +544,28 @@ a {
   color: #ffffff;
 }
 
+.footer-about-us p:first-child {
+  width: 230px;
+}
+
 .footer-about-us a {
   color: #ffd180;
+}
+
+.footer-about-us ul {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+
+  list-style: none;
+}
+
+.footer-about-callback {
+  width: 140px;
+}
+
+.footer-about-developer {
+  width: 115px;
 }
 
 .write-us-form label {
