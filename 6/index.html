@@ -52,42 +52,46 @@
   <main class="container">
     <h1 class="visually-hidden">«Техномарт» — Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <section class="features-shop">
-      <ul class="features-description">
-        <li>
-          <b>Материалы</b>
-          <a href="#">На любой вкус</a>
-        </li>
-        <li>
-          <b>Инструмент</b>
-          <a href="#">На все случаи</a>
-        </li>
-        <li>
-          <b>Техника</b>
-          <a href="#">Для стройки</a>
-        </li>
-        <li>
-          <b>Скидки 50%</b>
-          <a href="#">На 350 товаров</a>
-        </li>
-        <li>
-          <b>Доставка</b>
-          <a href="#">Бесплатно</a>
-        </li>
-      </ul>
-      <ul class="features-slider">
-        <li>
-          <b>Дрели</b>
-          <p>Соседям на радость!</p>
-          <img src="img/slider-2.jpg" alt="Покупка дрелей в магазине Техномарт" width="620" height="266">
-          <a class="button" href="catalog.html">Открыть каталог</a>
-        </li>
-        <li>
-          <b>Перфораторы</b>
-          <p>Настоящие мужские игрушки</p>
-          <img src="img/slider-1.jpg" alt="Покупка перфораторов в магазине Техномарт" width="620" height="266">
-          <a class="button" href="catalog.html">Открыть каталог</a>
-        </li>
-      </ul>
+      <div class="features-shop-wrapper">
+        <div class="features-shop-top">
+          <div class="features-item item-material">
+            <b>Материалы</b>
+            <a href="#">На любой вкус</a>
+          </div>
+          <div class="features-item item-tool">
+            <b>Инструмент</b>
+            <a href="#">На все случаи</a>
+          </div>
+          <div class="features-item item-equipment">
+            <b>Техника</b>
+            <a href="#">Для стройки</a>
+          </div>
+        </div>
+        <div class="features-shop-slider">
+          <div class="slider-item">
+            <b>Дрели</b>
+            <p>Соседям на радость!</p>
+            <img src="img/slider-2.jpg" alt="Покупка дрелей в магазине Техномарт" width="620" height="266">
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="slider-item">
+            <b>Перфораторы</b>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/slider-1.jpg" alt="Покупка перфораторов в магазине Техномарт" width="620" height="266">
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+        </div>
+        <div class="features-shop-right">
+          <div class="features-item item-discount">
+            <b>Скидки 50%</b>
+            <a href="#">На 350 товаров</a>
+          </div>
+          <div class="features-item item-delivery">
+            <b>Доставка</b>
+            <a href="#">Бесплатно</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="catalog-items-list">
       <div class="main-titles">
@@ -176,31 +180,34 @@
         </li>
       </ul>
     </section>
-    <section class="services-shop">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-      <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul>
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
-      </ul>
-      <section class="delivery-service">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        <img src="img/service-delivery.jpg" alt="Доставка в магазине Техномарт" width="468" height="261">
+    <div class="services-shop-wrapper">
+      <section class="services-shop">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <ul>
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Кредит</li>
+        </ul>
+        <section class="delivery-service">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <img src="img/service-delivery.jpg" alt="Доставка в магазине Техномарт" width="468" height="261">
+        </section>
+        <!-- <section class="guarantee-service">
+          <h3>Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+          <img src="img/service-guarantee.jpg" alt="Гарантия в магазине Техномарт" width="389" height="283">
+        </section>
+        <section class="credit-service">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+          <a class="button" href="#">Отправить заявку</a>
+          <img src="img/service-credit.jpg" alt="" width="465" height="285">
+        </section> -->
       </section>
-      <section class="guarantee-service">
-        <h3>Гарантия</h3>
-        <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-        <img src="img/service-guarantee.jpg" alt="Гарантия в магазине Техномарт" width="389" height="283">
-      </section>
-      <section class="credit-service">
-        <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        <a class="button" href="#">Отправить заявку</a>
-        <img src="img/service-credit.jpg" alt="" width="465" height="285">
-      </section>
+    </div>
     </section>
     <div class="about-wrapper">
       <section class="about-shop">
